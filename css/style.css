@@ -96,7 +96,7 @@ nav.categorias{
 .icono{
    
     width: 40px;
-    background-color: aquamarine;
+    background-color: rgb(168, 241, 217);
     color: white;
     display: grid;
     place-items: center;
