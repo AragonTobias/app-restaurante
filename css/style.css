@@ -160,6 +160,15 @@ main{
             height: 100%;
             padding: 10px;
             border-bottom-left-radius: 35px;
+            .textos{
+                 position: relative;
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+               
+
+            }
         }
        
 
