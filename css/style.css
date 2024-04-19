@@ -36,11 +36,7 @@ body{
 
 header{
     height: 60%;
-    width: 100%;
-    
-    
-
-    
+    width: 100%; 
 }
 .portada{
         position: relative;
@@ -61,7 +57,7 @@ nav.categorias{
     
     height: 30%;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(195, 195, 195);
     padding: 50px;
     display: flex;
     justify-content: flex-start;
@@ -72,14 +68,16 @@ nav.categorias{
         color: white;
         height: 60px;
         flex: 0 0 40px;
-        background-color: white;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center; 
-        background-color: gray;
+        
         
     }   
+    a:hover{
+        color:rgb(222, 222, 222) ;
+    }
 }
 .buscador{
         position: absolute;
@@ -117,4 +115,61 @@ input[type=submit]{
 }
 input[type=submit]:hover{
     transform: scale(1.4);
+}
+
+main{
+    
+    padding: 20px;
+    height:100px auto;
+    width: 100%;
+
+    .restaurantes{
+        position: relative;
+        padding: 3.5%;
+        width: 100%;
+        height: 100px auto;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .resto{
+            position: relative;
+            display: flex;
+            width: 100%;
+            flex:0 0 160px;
+            background-color: aqua;
+            
+
+        .imagen_resto{
+            position: absolute;
+            width: 55%;
+            height: 100%;
+            background-image: url(../img/resto_img_desc.jpg);
+            float: left;
+        }
+
+        .desc_resto{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            float: right;
+            right: 0;
+            background-color: white;
+            width: 60%;
+            height: 100%;
+            padding: 10px;
+            border-bottom-left-radius: 35px;
+        }
+       
+
+        }
+    }
+} 
+.ofertas{
+        position: absolute;
+        left: 5%;
+}
+span{
+    color: rgb(138, 138, 138);
 }
