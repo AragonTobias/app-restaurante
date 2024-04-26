@@ -6,6 +6,26 @@
     list-style: none;
 }
 
+/* width */
+::-webkit-scrollbar {
+    height: 10px;
+  }
+ 
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+ 
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #757575;
+    
+  }
+ 
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #474646;
+  }
 body {
     height: 100vh;
     width: 100%;
@@ -15,14 +35,14 @@ body {
 header {
     height: 60%;
     width: 100%;
-    background-image: url(../img/oko-restaurant.jpg);
+    background-image: url(/img/resto3.jpg);
     background-position: center;
     background-size: cover;
 
     .portada {
         height: 70%;
         width: 100%;
-        background: linear-gradient(0deg, rgba(252, 250, 250, 0.61), rgba(0, 0, 0, 0.096));
+       
         position: relative;
     }
 
@@ -40,15 +60,7 @@ header {
 
 }
 
-.saludo:hover ::before {
-    content: 'ola manola ';
-    height: 100px;
-}
 
-.saludo:hover ::after {
-    content: ' me pican lo coco';
-    height: 100px;
-}
 
 .buscador {
     position: absolute;
@@ -63,8 +75,8 @@ header {
     .icono {
 
         width: 40px;
-        background-color: rgb(161, 123, 17);
-        color: rgb(65, 61, 61);
+        background-color: rgb(14, 135, 233);
+        color: rgb(255, 255, 255);
         display: grid;
         place-items: center;
     }
@@ -79,7 +91,7 @@ input[type="search"] {
     width: calc(100% - 80px);
 }
 
-input[type="submit"]:focus {
+input[type="submit"] {
     width: 40px;
     border: none;
     outline: none;
@@ -87,16 +99,10 @@ input[type="submit"]:focus {
     cursor: pointer;
 }
 
-input[type="submit"]:hover {
-    transition: 100s ease-in-out;
-    transform: rotate(17000deg);
-
-}
-
 nav.categorias {
     height: 30%;
     width: 100% auto;
-    background-color: rgb(189, 157, 109);
+    background-color: rgb(185, 186, 189);
     padding: 40px;
     overflow: hidden;
     display: flex;
@@ -104,17 +110,16 @@ nav.categorias {
     gap: 20px;
     overflow-x: scroll;
 
-    a.btn-cat {
+    
+}
+.btn-cat {
         height: 100px;
         flex: 0 0 85px;
-        color: rgba(255, 0, 0, 0.637);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-}
-
 .f30 {
     font-size: 30pt !important;
 }
@@ -207,7 +212,7 @@ main {
     background-color: rgb(112, 108, 108);
     float: left;
     z-index: 0;
-    background-image: url(./img/restoranIgualinho.jpg);
+    background-image: url(/img/resto.jpg);
 
 }
 

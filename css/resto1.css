@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+.mainResto {
+    width: 100%;
+    background-color: aqua;
+    height: 100%;
+    padding: 0;
+   
+    .linkResto {
+        height: 60%;
+        position: relative;
+        width: 100%;
+        background-color: black;
+
+        .picResto {
+            height: 80%;
+            width: 100%;
+            background-color: red;
+        }
+
+        .nameResto {
+            height: 20%;
+            width: 100%;
+            background-color: cadetblue;
+        }
+
+        .puntoResto{
+            position: absolute;
+            bottom: 12%;
+            right: 12%;
+            height: 60px;
+            width: 60px;
+            background-color: chartreuse;
+            display: grid;
+            place-items: center;
+            font-size: 16pt;
+            color: white;
+            font-weight: bolder;
+            border-radius: 15px 0 15px 0;
+            
+        }
+    }
+}
+
+nav {
+
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: bisque;
+
+
+    button {
+        flex: 0 0 33.33%;
+        border: 0;
+        background-color: transparent;
+    }
+
+    button:hover {
+        background-color: rgb(206, 168, 122);
+        border-top: solid 2px rgb(0, 0, 0);
+        transform: scale(1.1);
+        font-weight: 700;
+    }
+
+}
